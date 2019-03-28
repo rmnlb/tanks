@@ -19,7 +19,7 @@ class TanksAsset extends AssetBundle
     ];
 
     public $js = [
-        'js/tankts.js'
+        'js/tanks.js'
     ];
 
     public $depends = [
