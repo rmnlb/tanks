@@ -1,0 +1,90 @@
+/*Global styles*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+/*Map styles*/
+.map-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: 50px auto;
+    position: relative;
+    background: radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+    background-color: #282828;
+    background-size: 16px 16px;
+}
+
+.map-row {
+
+}
+
+.map-item {
+    width: 75px;
+    height: 75px;
+}
+
+.map-border {
+    background-color: #556;
+    background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a),
+    linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+    background-size: 40px 70px;
+    background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px;
+}
+
+.map-woodblock {
+    background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0),
+    linear-gradient(135deg, transparent 37%, #a85 0, #a85 63%, transparent 0),
+    linear-gradient(45deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;
+    background-size: 25px 25px;
+}
+
+/*Tank styles*/
+.tank {
+    background-image: url("../img/tank.png");
+    background-size: 75px 75px;
+    position: absolute;
+    transition: transform .05s;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+/*Direction position rules*/
+.down {
+    transform: rotate(180deg);
+}
+
+.left {
+    transform: rotate(-90deg);
+}
+
+.right {
+    transform: rotate(90deg);
+}
+
+.bullet {
+    background-image: url("../img/bullet.png");
+    background-size: 10px 20px;
+    position: absolute;
+    width: 10px;
+    height: 20px;
+}
+
+
